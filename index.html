@@ -4,34 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio Farhan</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body>
   <!-- Navbar -->
-  <nav class="bg-white shadow p-4">
+  <nav class="navbar">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Farhan Akbar Arifah</h1>
-      <ul class="flex space-x-4">
-        <li><a href="#about" class="hover:text-blue-500">Tentang</a></li>
-        <li><a href="#projects" class="hover:text-blue-500">Proyek</a></li>
-        <li><a href="#contact" class="hover:text-blue-500">Kontak</a></li>
+      <h1 class="logo">Farhan Akbar Arifah</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#projects" class="nav-link">Proyek</a></li>
+        <li><a href="#contact" class="nav-link">Kontak</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-blue-600 text-white text-center py-20">
-    <h2 class="text-4xl font-bold">Halo, Saya Farhan 👋</h2>
-    <p class="mt-4 text-lg">"Perubahan besar dimulai dari langkah kecil."</p>
-    <a href="#projects" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200">
-      Lihat Proyek
-    </a>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <img src="https://i.ibb.co/2q6H8yJ/profile.png" alt="Foto Profil Farhan" class="profile-pic">
+      <h2>Halo, Saya Farhan 👋</h2>
+      <p>"Perubahan besar dimulai dari langkah kecil."</p>
+      <a href="#projects" class="btn">Lihat Proyek</a>
+    </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="container mx-auto py-16 px-6">
-    <h3 class="text-2xl font-bold mb-4">Tentang Saya</h3>
-    <p class="text-gray-700 leading-relaxed">
+  <section id="about" class="section container mx-auto">
+    <h3 class="section-title">Tentang Saya</h3>
+    <p>
       Saya seorang pelajar SMA yang aktif di berbagai kegiatan.  
       Pernah menjadi <strong>Brand Ambassador DPRI</strong> dan <strong>Duta Keberagaman Indonesia</strong>.  
       Motto hidup saya adalah <em>"Perubahan besar dimulai dari langkah kecil."</em>
@@ -39,36 +42,38 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="bg-gray-200 py-16 px-6">
+  <section id="projects" class="section bg-gray-100">
     <div class="container mx-auto">
-      <h3 class="text-2xl font-bold mb-6">Proyek Saya</h3>
+      <h3 class="section-title">Proyek Saya</h3>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-lg shadow p-4">
-          <h4 class="text-xl font-semibold mb-2">Film Pendek "BENIH"</h4>
-          <p class="text-gray-600">Karya untuk lomba FLS2N dengan tema kebiasaan kecil berdampak besar.</p>
+        <div class="card">
+          <h4>Film Pendek "BENIH"</h4>
+          <p>Karya untuk lomba FLS2N dengan tema kebiasaan kecil berdampak besar.</p>
         </div>
-        <div class="bg-white rounded-lg shadow p-4">
-          <h4 class="text-xl font-semibold mb-2">Video Kampanye</h4>
-          <p class="text-gray-600">"Pelajar Berparlemen, Membangun Lampung yang Berdaya".</p>
+        <div class="card">
+          <h4>Video Kampanye</h4>
+          <p>"Pelajar Berparlemen, Membangun Lampung yang Berdaya".</p>
         </div>
-        <div class="bg-white rounded-lg shadow p-4">
-          <h4 class="text-xl font-semibold mb-2">Esai Kepemimpinan</h4>
-          <p class="text-gray-600">Kontribusi nyata saya sebagai pemimpin generasi muda.</p>
+        <div class="card">
+          <h4>Esai Kepemimpinan</h4>
+          <p>Kontribusi nyata saya sebagai pemimpin generasi muda.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="container mx-auto py-16 px-6">
-    <h3 class="text-2xl font-bold mb-4">Hubungi Saya</h3>
-    <p class="text-gray-700">Instagram: <a href="https://instagram.com/farhnn_akbr" class="text-blue-600">@farhnn_akbr</a></p>
-    <p class="text-gray-700">Email: <a href="mailto:farhan@example.com" class="text-blue-600">farhan@example.com</a></p>
+  <section id="contact" class="section container mx-auto">
+    <h3 class="section-title">Hubungi Saya</h3>
+    <p>Instagram: <a href="https://instagram.com/farhnn_akbr" target="_blank">@farhnn_akbr</a></p>
+    <p>Email: <a href="mailto:farhan@example.com">farhan@example.com</a></p>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white shadow text-center p-4">
-    <p class="text-gray-600">&copy; 2025 Farhan Akbar Arifah. Semua Hak Dilindungi.</p>
+  <footer class="footer">
+    <p>&copy; 2025 Farhan Akbar Arifah. Semua Hak Dilindungi.</p>
   </footer>
 </body>
+</html>
+
 </html>
